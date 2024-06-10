@@ -1,5 +1,6 @@
 FROM ubuntu:22.04
 LABEL maintainer="horologger <horologgerprotonmail.com>"
+FROM horologger/gotty:v1.5.0
 
 RUN apt-get -y update && \
     apt-get install -y htop lsof wget && \
